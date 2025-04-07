@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predicción Mines 1Win - Tecnología Futurista</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f 0%, #2a1b3d 100%);
+    }
+    .hover-scale {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-scale:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(147, 51, 234, 0.3);
+    }
+    .glow {
+      box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .modal-content {
+      background: #1e1e2f;
+      padding: 24px;
+      border-radius: 12px;
+      max-width: 500px;
+      width: 90%;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body class="text-gray-200">
+  <header class="bg-gradient-to-r from-blue-800 to-purple-900 text-white py-16 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold">Predicción Mines 1Win</h1>
+    <p class="text-lg mt-3 max-w-2xl mx-auto">Domina el juego con nuestra tecnología predictiva de vanguardia. Seguro, avanzado y confiable.</p>
+  </header>
+
+  <section class="py-16 px-6 max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl font-semibold text-blue-400">¿Qué es?</h2>
+        <p class="mt-4 text-gray-300">Un sistema revolucionario que descifra los patrones del juego <strong>Mines</strong> en 1Win, garantizando éxito total en tus apuestas.</p>
+      </div>
+      <img src="https://via.placeholder.com/500x300" alt="" class="rounded-lg hover-scale">
+    </div>
+  </section>
+
+  <section id="funcionamiento" class="py-16 px-6 bg-gray-900 rounded-xl max-w-6xl mx-auto glow">
+    <h2 class="text-3xl font-semibold text-center text-purple-400 mb-8">¿Cómo funciona?</h2>
+    <div class="grid md:grid-cols-2 gap-8 text-gray-300">
+      <div>
+        <p class="mb-4">Nuestra tecnología externa analiza en tiempo real los patrones del servidor de Mines, mostrando las minas antes de que juegues.</p>
+        <p>El juego no es aleatorio: sigue una lógica que hemos descifrado tras meses de investigación.</p>
+      </div>
+      <div>
+        <p class="mb-4">Sugerimos <strong>5 jugadas al día</strong> y un límite de <strong>$100 USD</strong> por apuesta para máxima discreción.</p>
+        <p>Ejecutado fuera del entorno del casino, nuestro sistema es seguro e indetectable.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="planes" class="py-16 px-6">
+    <h2 class="text-3xl font-semibold text-center text-blue-400 mb-12">Elige tu Plan</h2>
+    <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+      <div class="bg-gray-800 p-6 rounded-lg hover-scale text-center">
+        <h3 class="text-xl font-semibold text-purple-400">Diario</h3>
+        <p class="text-gray-300 mt-2">24 horas de acceso</p>
+        <p class="text-2xl font-bold mt-4 text-blue-400">$29</p>
+        <button onclick="showModal('Diario', 29)" class="mt-4 bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700">Adquirir</button>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg border-2 border-blue-500 hover-scale text-center glow">
+        <h3 class="text-xl font-semibold text-purple-400">Semanal</h3>
+        <p class="text-gray-300 mt-2">7 días de acceso</p>
+        <p class="text-2xl font-bold mt-4 text-blue-400">$50</p>
+        <button onclick="showModal('Semanal', 50)" class="mt-4 bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700">Adquirir</button>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg hover-scale text-center">
+        <h3 class="text-xl font-semibold text-purple-400">Mensual</h3>
+        <p class="text-gray-300 mt-2">30 días de acceso</p>
+        <p class="text-2xl font-bold mt-4 text-blue-400">$100</p>
+        <button onclick="showModal('Mensual', 100)" class="mt-4 bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700">Adquirir</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 px-6 bg-gray-900 rounded-xl max-w-6xl mx-auto glow">
+    <h2 class="text-3xl font-semibold text-center text-purple-400 mb-12">Voces de Éxito</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="" class="w-12 h-12 rounded-full mx-auto mb-4">
+        <h4 class="font-medium text-blue-400">@CryptoLuis21</h4>
+        <p class="text-sm text-gray-300 mt-2">"Ganancias constantes desde el primer día. Tecnología de otro nivel."</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="" class="w-12 h-12 rounded-full mx-auto mb-4">
+        <h4 class="font-medium text-blue-400">@GamerProX</h4>
+        <p class="text-sm text-gray-300 mt-2">"Simple, efectivo y confiable. No hay pierde."</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <img src="https://randomuser.me/api/portraits/men/24.jpg" alt="" class="w-12 h-12 rounded-full mx-auto mb-4">
+        <h4 class="font-medium text-blue-400">@OscarMinado</h4>
+        <p class="text-sm text-gray-300 mt-2">"Recuperé mi inversión rápido. ¡Funciona al 100%!"</p>
+      </div>
+    </div>
+    <div class="text-center mt-12">
+      <p class="text-gray-300 mb-4">Para ver avances y testimonios de la comunidad, únete a este canal de Telegram:</p>
+      <a href="https://t.me/genesissignalhack" target="_blank" class="inline-block bg-blue-500 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-600 glow">Unirme al Canal</a>
+    </div>
+  </section>
+
+  <!-- Modal para métodos de pago -->
+  <div id="payment-modal" class="modal">
+    <div class="modal-content glow">
+      <h2 class="text-2xl font-semibold text-blue-400 mb-6">Paga tu Plan <span id="modal-plan-name"></span></h2>
+      <p class="mb-4 text-gray-300">Monto: $<span id="modal-plan-price"></span></p>
+      <p class="mb-6 text-gray-300">Envía el comprobante a <strong>@genesissoport</strong>.</p>
+      <div class="bg-gray-800 p-4 rounded-lg">
+        <p class="mb-2 text-gray-300"><strong>USDT (TRC20):</strong> TEB97xYedvVaFn2dFJV3wqcCNxYJkfBx1W</p>
+        <p class="mb-2 text-gray-300"><strong>Bitcoin (BTC):</strong> bc1q6rs4zrtuggnmcvd8wp3dvvypw50tyeq8hpynf0</p>
+        <p class="mb-2 text-gray-300"><strong>Ethereum (ETH):</strong> 0x49dD8a36FB7b070D127B5c457e50a9Ff12EaBE0E</p>
+        <p class="text-gray-300"><strong>BNB:</strong> 0x49dD8a36FB7b070D127B5c457e50a9Ff12EaBE0E</p>
+      </div>
+      <button onclick="closeModal()" class="mt-6 bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600">Cerrar</button>
+    </div>
+  </div>
+
+  <footer class="bg-gradient-to-r from-blue-800 to-purple-900 text-white py-6 text-center">
+    <p class="text-sm">© 2025 Predicción Mines 1Win. Tecnología del futuro, hoy.</p>
+  </footer>
+
+  <script>
+    function showModal(plan, price) {
+      const modal = document.getElementById('payment-modal');
+      const planName = document.getElementById('modal-plan-name');
+      const planPrice = document.getElementById('modal-plan-price');
+      planName.textContent = plan;
+      planPrice.textContent = price;
+      modal.style.display = 'flex';
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('payment-modal');
+      modal.style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>
